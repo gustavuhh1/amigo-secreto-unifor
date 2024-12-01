@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    font-family: "Fira Sans", sans-serif;
+}
+
+.footer{
+    display: flex;
+    background-color: #629584;
+    height: 40px;
+    width: 320px;
+    justify-content: center;
+    align-items: center;
+} & p{
+    padding-right: 8px;
+}
