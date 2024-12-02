@@ -24,7 +24,7 @@ export function Home() {
               <button id="plus">+</button>
 
             </div>
-            <button id="botaoOK">Ok</button>
+            <button id="botaoOK">OK</button>
           </div>
         </div>
       </main>

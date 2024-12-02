@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alice&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Parkinsans:wght@300..800&display=swap');
+
 
 
 *{
@@ -7,15 +7,18 @@
 }
 
 :root{
-    font-family: Parkinsans;
+    font-family: Roboto;
     
 }
 
 #page{
-    width: 320px;
-    height:568px;
     background-color: #387478;
-  
+    display: flex;
+    width: 100vw;
+    height:calc(100vh - 40px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 
 }
 
@@ -46,12 +49,13 @@
     margin: 36px;
     position: absolute;
     top: 200px;
+    align-items: center;
     
 
 } & #titulo2{
     display: flex;
     justify-content: center;
-    margin: 15px 0px;
+
 }
 
 
@@ -59,9 +63,10 @@
     display: flex; 
     justify-content: space-evenly; 
     align-items: center; 
-    
     height: 25px;
     gap: 10px;
+    width: 100%;
+    margin-top: 20px ;
     
     
 } & #plus{
@@ -97,7 +102,9 @@
     width: 30px;
     height: 25px;
     font-family: Parkinsans;
-    margin-top: 15px;
-    margin-left: 78px;
+    margin-top: 20px ;
+    text-align: center;
+    line-height: 25px;
+
 }
 
