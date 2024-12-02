@@ -11,6 +11,7 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-} & p{
+} 
+.footer p{
     padding-right: 8px;
 }

@@ -47,8 +47,10 @@ export function Home() {
                 +
               </button>
             </div>
-            <button id="botaoOK">
-              <Link to={'amigos'}>OK</Link>
+            <button disabled={number < 1} id="botaoOK">
+              <Link id="link" to={number >= 1 ? "/amigos" : "#"}>
+                OK
+              </Link>
             </button>
           </div>
         </div>
