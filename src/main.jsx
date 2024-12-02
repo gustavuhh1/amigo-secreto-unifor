@@ -5,6 +5,9 @@ import { Main } from './components/main.jsx'
 import { Footer } from './components/Footer.jsx'
 
 
+import { Home } from './components/home.jsx'
+import { Footer } from './components/Footer.jsx'
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Main />
