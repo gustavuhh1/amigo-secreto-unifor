@@ -33,16 +33,15 @@ export function Home() {
               <button value="-" onClick={handleClick} id="minus">
                 -
               </button>
-              <div id="inputNumber">
-                <p
+              <span id="inputNumber"
                   value={number}
                   onChange={(e) => {
                     e.target.value = setNumber();
                   }}
                 >
                   {number}
-                </p>
-              </div>
+
+              </span>
               <button value="+" onClick={handleClick} id="plus">
                 +
               </button>
