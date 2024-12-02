@@ -67,11 +67,13 @@
   height: 100%;
   width: 25%;
   background-color: #387478;
+  border-radius: 32px;
 }
 #minus {
   height: 100%;
   width: 25%;
   background-color: #387478;
+  border-radius: 32px;
 }
 #inputNumber {
   text-align: center;
