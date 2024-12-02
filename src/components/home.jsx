@@ -16,9 +16,11 @@ export function Home() {
               <h3 id="titulo2">Quantos participantes?</h3>
             </div>
             <div id="botoesFlex">
-              <button id="minus"></button>
+              <button id="minus">-</button>
+              <div id="inputNumber">
               <p>3</p>
-              <button id="plus"></button>
+              </div>
+              <button id="plus">+</button>
 
             </div>
              <button id="botaoOK">Ok</button>

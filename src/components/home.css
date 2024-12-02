@@ -46,7 +46,6 @@
     margin: 36px;
     position: absolute;
     top: 200px;
-    padding-left:;
     
 
 } & #titulo2{
@@ -61,16 +60,30 @@
     justify-content: space-evenly; 
     align-items: center; 
     
+    height: 25px;
+    gap: 10px;
+    
+    
 } & #plus{
-    background-image: url('src/assets/ButtonMais.png');
-    width: 25px;
-    height: 21px;
+    flex-grow: 1;
+    background-color: #387478;
     border: 32px;
+    border-radius: 26px;
+    height:100%;
 } & #minus{
-    background-image: url('src/assets/ButtonMenos.png');
-    width: 25px;
-    height: 21px;
+    background-color: #387478;
+    height: 100%;
+    flex-grow: 1;
+    border-radius: 26px;
     border: 32px;
+} & #inputNumber{
+    flex-grow: 3;
+    text-align: center;
+    background-color: #387478;
+    border-radius: 26px;
+    height: 100%;
+    
+    
 }
 
 
@@ -80,6 +93,7 @@
     color: black;
     background-color: #387478;
     border-radius: 7px;
+    border: 0px;
     width: 30px;
     height: 25px;
     font-family: Parkinsans;
