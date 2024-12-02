@@ -1,15 +1,16 @@
-import "./home.css"
+import "./home.css";
 
 export function Home() {
   return (
     <>
       <main>
         <div id="page">
-        
-        <div id="homeTitle">
-        <h1>Sorteador <br />
-        amigo secreto</h1>
-        </div>
+          <div id="homeTitle">
+            <h1>
+              Sorteador <br />
+              amigo secreto
+            </h1>
+          </div>
 
           <div className="containerParticipantes">
             <div>
@@ -23,9 +24,8 @@ export function Home() {
               <button id="plus">+</button>
 
             </div>
-             <button id="botaoOK">Ok</button>
+            <button id="botaoOK">Ok</button>
           </div>
-
         </div>
       </main>
     </>
