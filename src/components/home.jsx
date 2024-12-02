@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./home.css";
+import { Footer } from "./Footer";
+import { Link } from "react-router";
 
 export function Home() {
   const [number, setNumber] = useState(0);
@@ -45,10 +47,15 @@ export function Home() {
                 +
               </button>
             </div>
-            <button id="botaoOK">OK</button>
+            <button disabled={number < 1} id="botaoOK">
+              <Link id="link" to={number >= 1 ? "/amigos" : "#"}>
+                OK
+              </Link>
+            </button>
           </div>
         </div>
       </main>
+      <Footer />
     </>
   );
 }
