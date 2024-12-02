@@ -1,8 +1,8 @@
 export function Home() {
   return (
     <>
-      <main>
-        
+      <main class>
+         <div ></div>
       </main>
     </>
   );
