@@ -1,14 +1,15 @@
-/* eslint-disable react/jsx-key */
 import { useState } from "react";
+import { Footer } from "./Footer";
 
 import "./Main.css";
+import { Link } from "react-router";
 
 export function Main() {
   const [nome, setNome] = useState("");
   const [lista, setLista] = useState([]);
 
   const handleInputName = (e) => {
-    console.log(e.target.value)
+    console.log(e.target.value);
     setNome(e.target.value);
   };
 
@@ -28,13 +29,15 @@ export function Main() {
   const removeNameList = (index) => {
     const novaLista = lista.filter((_, i) => i !== index);
     setLista(novaLista);
-  }
+  };
 
   const listItems = lista.map((nomes, index) => {
     return (
       <li key={index} className="participantName">
         <span>{nomes}</span>
-        <button onClick={() => removeNameList(index)} className="btnRemoveName">-</button>
+        <button onClick={() => removeNameList(index)} className="btnRemoveName">
+          -
+        </button>
       </li>
     );
   });
@@ -52,7 +55,7 @@ export function Main() {
 
           <div className="inputNames">
             <input
-              onKeyDown={e => e.key === 'Enter' ? handleSubmitName() : null}
+              onKeyDown={(e) => (e.key === "Enter" ? handleSubmitName() : null)}
               value={nome}
               onChange={handleInputName}
               type="text"
@@ -67,13 +70,14 @@ export function Main() {
 
         <div className="footBtn">
           <button id="btnBack" type="button">
-            voltar
+            <Link to={'/'}>voltar</Link>
           </button>
           <button id="btnGo" type="button">
             sortear
           </button>
         </div>
       </div>
+      <Footer />
     </>
   );
 }
