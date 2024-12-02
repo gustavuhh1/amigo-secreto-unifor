@@ -43,7 +43,7 @@ export function Main() {
     <>
       <div id="page">
         <div className="tableBox">
-          <h3>PARTICIPANTES</h3>
+          <h3>PARTICIPANTES:</h3>
 
           <ul className="participantList">{listItems}</ul>
         </div>
