@@ -34,8 +34,8 @@ export function Main() {
   const listItems = lista.map((nomes, index) => {
     return (
       <li key={index} className="participantName">
-        <span>{nomes}</span>
-        <button onClick={() => removeNameList(index)} className="btnRemoveName">
+        <span id="nameCamp">{nomes}</span>
+        <button  id="btnRemoveName" onClick={() => removeNameList(index)}>
           -
         </button>
       </li>
