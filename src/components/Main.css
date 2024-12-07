@@ -33,10 +33,10 @@
 .participantList {
   display: inline-block;
   width: 100%;
+  border-radius: 5px;
   max-width: 500px;
   padding-bottom: 50px;
   background-color: #387478;
-  border-radius: 5px;
   padding-top: 5px;
   box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.568);
 }

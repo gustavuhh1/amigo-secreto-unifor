@@ -7,6 +7,7 @@ import { Link } from "react-router";
 export function Main() {
   const [nome, setNome] = useState("");
   const [lista, setLista] = useState([]);
+  let limit = Number(localStorage.getItem('number'))
 
   const handleInputName = (e) => {
     console.log(e.target.value);
@@ -16,7 +17,7 @@ export function Main() {
   const handleSubmitName = () => {
     if (nome.length > 25 || nome.trim() === "") {
       alert("Coloque um nome menor que 25 caracteres");
-    } else if (lista.length >= 5) {
+    } else if (lista.length >= limit) {
       //  <== adiciona o valor do home aqui
       alert("Lista com capacidade máxima");
     } else {
@@ -51,7 +52,7 @@ export function Main() {
           <ul className="participantList">{listItems}</ul>
         </div>
         <div className="boxInput">
-          <h3 id="titleInput">Adicione 5 participantes</h3>
+          <h3 id="titleInput">Adicione {localStorage.getItem('number')} participantes</h3>
 
           <div className="inputNames">
             <input

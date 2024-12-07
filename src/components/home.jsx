@@ -14,6 +14,9 @@ export function Home() {
       number >= 10 ? null : setNumber(number + 1);
     }
   };
+  const handleOk = () => {
+    localStorage.setItem('number', number)
+  }
   return (
     <>
       <main>
@@ -33,21 +36,21 @@ export function Home() {
               <button value="-" onClick={handleClick} id="minus">
                 -
               </button>
-              <span id="inputNumber"
-                  value={number}
-                  onChange={(e) => {
-                    e.target.value = setNumber();
-                  }}
-                >
-                  {number}
-
+              <span
+                id="inputNumber"
+                value={number}
+                onChange={(e) => {
+                  e.target.value = number;
+                }}
+              >
+                {number}
               </span>
               <button value="+" onClick={handleClick} id="plus">
                 +
               </button>
             </div>
             <button disabled={number < 1} id="botaoOK">
-              <Link id="link" to={number >= 1 ? "/amigos" : "#"}>
+              <Link id="link" onClick={handleOk} to={number >= 1 ? "/amigos" : "#"}>
                 OK
               </Link>
             </button>
