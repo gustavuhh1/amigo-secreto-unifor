@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Parkinsans:wght@300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  font-family: "Roboto", sans-serif;
+}
+
+#page {
+  background-color: #387478;
+  display: flex;
+  width: 100vw;
+  height: calc(100vh - 40px);
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  /* oi gugu*/
+}
+
+#homeTitle {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 22px;
+  color: white;
+  text-shadow: 2px 2px 3px black;
+  
+} & h1{
+  margin-bottom: 450px;
+}
+
+#titulo2 {
+  display: flex;
+  justify-content: center;
+}
+
+.containerParticipantes {
+  display: flex;
+  flex-direction: column;
+  border: 26px solid whitesmoke;
+  background-color: whitesmoke;
+  border-radius: 26px;
+  justify-content: center;
+  margin: 36px;
+  position: absolute;
+  top: 200px;
+  align-items: center;
+  margin-top: 150px;
+}
+& #titulo2 {
+  display: flex;
+  justify-content: center;
+}
+
+#botoesFlex {
+  display: flex;
+  height: 25px;
+  width: 100%;
+  margin-top: 20px;
+  gap: 15px;
+}
+#plus {
+  font-size: 16px;
+  height: 100%;
+  width: 25%;
+  background-color: #387478;
+  border-radius: 32px;
+}
+#minus {
+  height: 100%;
+  width: 25%;
+  background-color: #387478;
+  border-radius: 32px;
+}
+#inputNumber {
+  text-align: center;
+  justify-content: center;
+  line-height: 1.6;
+  height: 100%;
+  width: 50%;
+  background-color: #387478;
+  border-radius: 26px;
+  
+}
+
+#botaoOK {
+  display: flex;
+  justify-content: center;
+  color: black;
+  background-color: #387478;
+  border-radius: 7px;
+  border: 0px;
+  width: 30px;
+  height: 25px;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 25px;
+} & #link {
+  color: white;
+  font-style: normal;
+  text-decoration: none;
+}
+
