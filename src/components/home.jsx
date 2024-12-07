@@ -23,8 +23,7 @@ export function Home() {
         <div id="page">
           <div id="homeTitle">
             <h1>
-              Sorteador <br />
-              amigo secreto
+              Uniamigo
             </h1>
           </div>
 
