@@ -8,18 +8,17 @@ import { Secret } from "./components/Secret.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/amigo-secreto-unifor/",
     element: <Home />,
   },
   {
-    path: 'amigos',
-    element: <Main/>
+    path: "/amigo-secreto-unifor/amigos",
+    element: <Main />,
   },
   {
-    path: 'secret',
-    element: <Secret/>,
-    
-  }
+    path: "/amigo-secreto-unifor/secret",
+    element: <Secret />,
+  },
 ]);
 createRoot(document.getElementById("root")).render(
   <StrictMode>

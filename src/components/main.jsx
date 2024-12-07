@@ -71,7 +71,7 @@ export function Main() {
 
         <div className="footBtn">
           <button type="button">
-            <Link id="btnBack" to={'/'}>voltar</Link>
+            <Link id="btnBack" to={'/amigo-secreto-unifor'}>voltar</Link>
           </button>
           <button id="btnGo" type="button">
             sortear

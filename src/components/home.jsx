@@ -50,7 +50,11 @@ export function Home() {
               </button>
             </div>
             <button disabled={number < 1} id="botaoOK">
-              <Link id="link" onClick={handleOk} to={number >= 1 ? "/amigos" : "#"}>
+              <Link
+                id="link"
+                onClick={handleOk}
+                to={number >= 1 ? "/amigo-secreto-unifor/amigos" : "#"}
+              >
                 OK
               </Link>
             </button>
