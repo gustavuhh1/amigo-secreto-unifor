@@ -15,16 +15,24 @@ export function Home() {
     }
   };
   const handleOk = () => {
-    localStorage.setItem('number', number)
+    localStorage.setItem("number", number);
+  };
+
+  function BotaoNext() {
+    return (
+      <Link
+        id="link"
+        onClick={handleOk}
+        to={number >= 1 ? "/amigo-secreto-unifor/amigos" : "#"}
+      >OK</Link>
+    );
   }
   return (
     <>
       <main>
         <div id="page">
           <div id="homeTitle">
-            <h1>
-              Uniamigo
-            </h1>
+            <h1>Uniamigo</h1>
           </div>
 
           <div className="containerParticipantes">
@@ -49,13 +57,7 @@ export function Home() {
               </button>
             </div>
             <button disabled={number < 1} id="botaoOK">
-              <Link
-                id="link"
-                onClick={handleOk}
-                to={number >= 1 ? "/amigo-secreto-unifor/amigos" : "#"}
-              >
-                OK
-              </Link>
+              <BotaoNext></BotaoNext>
             </button>
           </div>
         </div>

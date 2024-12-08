@@ -16,7 +16,6 @@ export function Main() {
     localStorage.setItem("listaCached", JSON.stringify(lista));
   }, [lista]);
 
-
   const handleInputName = (e) => {
     setNome(e.target.value);
   };
@@ -50,12 +49,11 @@ export function Main() {
 
   const handleSuffleList = () => {
     if (lista.length < limit) {
-      console.log(`Adicione o mais ${limit - lista.length} para continuar o sorteio`);
+      alert(`Adicione o mais ${limit - lista.length} participantes para continuar o sorteio`);
       return;
     } else {
       const sorteados = lista.slice().sort(() => Math.random() - 0.5);
-      localStorage.setItem('resultado', JSON.stringify(sorteados));
-      
+      localStorage.setItem("resultado", JSON.stringify(sorteados));
     }
   };
 
@@ -75,32 +73,32 @@ export function Main() {
               onKeyDown={(e) => (e.key === "Enter" ? handleSubmitName() : null)}
               value={nome}
               onChange={handleInputName}
-              type="text"
               placeholder="nome..."
             />
 
             <button onClick={handleSubmitName} type="submit" id="btnAdd">
-              +
+              <span>+</span>
             </button>
           </div>
         </div>
 
         <div className="footBtn">
-          <button type="button">
-            <Link id="btnBack"
-            onClick={() => {localStorage.clear()}} to={"/amigo-secreto-unifor"}>
-              voltar
-            </Link>
-          </button>
-          <button type="button">
-            <Link
-              onClick={handleSuffleList}
-              id="btnGo"
-              to={"/amigo-secreto-unifor/secret"}
-            >
-              sortear
-            </Link>
-          </button>
+          <Link
+            id="btnNav"
+            onClick={() => {
+              localStorage.clear();
+            }}
+            to={"/amigo-secreto-unifor"}
+          >
+            <span>voltar</span>
+          </Link>
+          <Link
+            onClick={handleSuffleList}
+            id="btnNav"
+            to={lista.length === limit ? "/amigo-secreto-unifor/secret" : "#"}
+          >
+            <span>sortear</span>
+          </Link>
         </div>
       </div>
       <Footer />
