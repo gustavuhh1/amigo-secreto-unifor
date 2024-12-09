@@ -80,7 +80,7 @@ export function Secret() {
               }}
               to={"/amigo-secreto-unifor/amigos"}
             >
-              Cancelar
+              Voltar
             </Link>
           </button>
           <button onClick={incrementIndex} id="btnNav">
