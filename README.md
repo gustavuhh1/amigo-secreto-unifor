@@ -1,12 +1,13 @@
 # Amigo Secreto - UniAmigos
 
-![Amigo Secreto](https://gustavuhh1.github.io/amigo-secreto-unifor/banner.png)
+<img src='./src/assets/presents.png' style='
+width: 25px; margin-right: 5px'></img> Amigo Secreto 
 
 Este é um projeto de **sorteador de amigo secreto**, desenvolvido como trabalho final da disciplina **Ambiente e Desenvolvimento de Software** na Universidade de Fortaleza (**UNIFOR**).
 
 ## 🌐 Link para o projeto
 
-Acesse a aplicação: [Amigo Secreto - UniAmigos](https://gustavuhh1.github.io/amigo-secreto-unifor)
+Acesse a aplicação GithubPages: [Amigo Secreto - UniAmigos](https://gustavuhh1.github.io/amigo-secreto-unifor)
 
 ## 🛠⚙ Tecnologias utilizadas
 
@@ -104,7 +105,7 @@ npm run deploy
 
 ## 👤 Autor
 
-Desenvolvido por [Gustavo](https://github.com/gustavuhh1), [João](https://github.com/joaooliveiradev1) e [Rodrigo](https://github.com/RodrigoFacanha) para o curso de Ambientes desenvolvimento de software (ADS) na UNIFOR.
+Desenvolvido por [Gustavo](https://github.com/gustavuhh1), [João](https://github.com/joaooliveiradev1) e [Rodrigo](https://github.com/RodrigoFacanha) para a cadeira de Ambientes desenvolvimento de software (ADS) na UNIFOR.
 
 ## 🔒 Licença
 
