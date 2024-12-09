@@ -11,8 +11,6 @@ export function Secret() {
 
   useEffect(() => {
     console.log(listDeExibicao)
-    console.log(`${index}: ${listDeExibicao[index].pessoa}, ${listDeExibicao[index].amigoSecreto}`)
-    console.log(`${index} e ${listDeExibicao.length - 1}`);
   })
 
   const generatePairs = (participants) => {
@@ -52,7 +50,7 @@ export function Secret() {
       setText("Revelar");
       setIndex(index + 1);
     }else{
-      alert('calmo')
+      alert('Fim do Sorteio')
     }
    
   };
