@@ -1,13 +1,19 @@
 import "./secret.css";
 import { Footer } from "./Footer";
 import { Link } from "react-router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export function Secret() {
   const [index, setIndex] = useState(0); // Armazena o índice do participante que quer revelar.
   const listParticipantes = JSON.parse(localStorage.getItem("resultado")) || [];
   const listOrder = JSON.parse(localStorage.getItem("listaCached")) || [];
   const [text, setText] = useState("Revelar");
+
+  useEffect(() => {
+    console.log(listDeExibicao)
+    console.log(`${index}: ${listDeExibicao[index].pessoa}, ${listDeExibicao[index].amigoSecreto}`)
+    console.log(`${index} e ${listDeExibicao.length - 1}`);
+  })
 
   const generatePairs = (participants) => {
     return participants.map((p, i) => ({
@@ -17,13 +23,11 @@ export function Secret() {
   };
 
   const pairs = generatePairs(listParticipantes);
-  console.log(pairs);
-  console.log(listOrder);
 
   const makeShowList = (listOrderm, listParticipantes) => {
     const lista = [];
     listOrderm.forEach((daVez) => {
-      listParticipantes.forEach((obj, index) => {
+      listParticipantes.forEach((obj) => {
         if (daVez == obj.giver) {
           lista.push({ pessoa: daVez, amigoSecreto: obj.receiver });
         }
@@ -32,24 +36,25 @@ export function Secret() {
     return lista;
   };
 
-  const list = makeShowList(listOrder, pairs);
-  console.log(list);
+  const listDeExibicao = makeShowList(listOrder, pairs);
 
   const handleSecret = () => {
     if (text == "Revelar") {
-      setText(pairs[index].receiver);
+      setText(listDeExibicao[index].amigoSecreto);
     } else {
       setText("Revelar");
     }
   };
 
   const incrementIndex = () => {
-    console.log(index);
-    const limitIndex = listParticipantes.length;
+    const limitIndex = listDeExibicao.length -1 ;
     if (index < limitIndex) {
       setText("Revelar");
       setIndex(index + 1);
+    }else{
+      alert('calmo')
     }
+   
   };
 
   return (
@@ -58,7 +63,7 @@ export function Secret() {
         <h2>Sorteando...</h2>
         <div className="containerReveal">
           <h3>
-            {pairs[index].giver}
+            {listDeExibicao[index].pessoa}
             <hr />
           </h3>
           <p>seu amigo secreto é...</p>
