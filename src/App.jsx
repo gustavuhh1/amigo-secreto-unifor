@@ -8,15 +8,15 @@ import { Secret } from "./components/Secret.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/amigo-secreto-unifor/",
+    path: "/",
     element: <Home />,
   },
   {
-    path: "/amigo-secreto-unifor/amigos",
+    path: "/amigos",
     element: <Main />,
   },
   {
-    path: "/amigo-secreto-unifor/secret",
+    path: "/amigos/secret",
     element: <Secret />,
   },
 ]);

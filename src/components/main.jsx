@@ -95,7 +95,7 @@ export function Main() {
           <Link
             onClick={handleSuffleList}
             id="btnNav"
-            to={lista.length === limit ? "/amigo-secreto-unifor/secret" : "#"}
+            to={lista.length === limit ? "/amigos/secret" : "#"}
           >
             <span>sortear</span>
           </Link>

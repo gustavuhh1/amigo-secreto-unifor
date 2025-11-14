@@ -6,7 +6,7 @@ export function Footer() {
     <>
       <div className="footer">
         <p>Created by</p>
-        <a href="http://github.com/joaooliveiradev1" target="_blank">
+        <a href="http://github.com/gustavuhh1" target="_blank">
           <img src={imgGithub} alt="icone github" />
         </a>
       </div>

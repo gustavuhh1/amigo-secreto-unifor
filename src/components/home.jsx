@@ -23,7 +23,7 @@ export function Home() {
       <Link
         id="link"
         onClick={handleOk}
-        to={number >= 1 ? "/amigo-secreto-unifor/amigos" : "#"}
+        to={number >= 1 ? "/amigos" : "#"}
       >OK</Link>
     );
   }
